@@ -1,0 +1,133 @@
+.container {
+	max-width: 45rem;
+	width: 100%;
+	position: relative;
+    margin: 30rem auto;
+    
+}
+.form {
+    color: #000;
+	width: 100%;
+	padding: 2.8rem;
+	border-radius: 1.2rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) scale(.8);
+	opacity: 0;
+	z-index: 100;
+	transition: all .3s ease;
+	transition-delay: 0s;
+    background-color: #e6f0ff;
+}
+.form.active {
+	transform: translateY(-50%);
+	opacity: 1;
+	z-index: 200;
+	transition-delay: .3s;
+}
+
+.title {
+	font-size: 2.8rem;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.form__group {
+	margin-bottom: 1rem;
+}
+.form__group label {
+	display: inline-block;
+	margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+}
+.input__group {
+	width: 100%;
+	position: relative;
+}
+.input__group input {
+	padding: 1.2rem 4rem 1.2rem 2rem;
+	outline: none;
+	border-radius: 6px;
+	border: 1px solid #B7B7B7;
+	width: 100%;
+	transition: all .3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+}
+
+/* Validation */
+.input__group input:focus,
+.input__group input:not(:placeholder-shown) {
+	border-color: #9bc3ff;
+	background: #F4F2FF;
+}
+.input__group input:focus + i,
+.input__group input:not(:placeholder-shown) + i {
+	color: #9bc3ff;
+}
+.input__group input:focus:valid {
+	box-shadow: 0 0 0 4px #23AE00;
+}
+.input__group input:valid:not(:placeholder-shown) {
+	border-color: #23AE00;
+}
+.input__group input:valid:not(:placeholder-shown) + i {
+	color: #23AE00;
+}
+.input__group input:invalid:not(:placeholder-shown) {
+	border-color: #FE2727;
+}
+.input__group input:invalid:not(:placeholder-shown) + i {
+	color: #FE2727;
+}
+.input__group input:focus:invalid {
+	box-shadow: 0 0 0 4px #FE2727;
+}
+.input__group input:focus,
+.input__group input:focus:placeholder-shown {
+	box-shadow: 0 0 0 4px #9bc3ff;
+}
+/* Validation */
+
+.input__group i {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	color: #9B9B9B;
+	pointer-events: none;
+	transition: all .3s ease;
+}
+.form__group .help__text {
+    display: inline-block;
+	font-size: 1.4rem;
+	color: #000;
+    margin-top: 0.6rem;
+}
+
+.btn {
+    width: 100%;
+    border: none;
+    background-color: #094db1;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: all 0.3s ease-in;
+    background-color: rgba(9, 77, 177, 0.8);
+}
+
+.btn__group {
+    display:flex;
+    justify-content: center;
+}
+
+.error {
+	margin-top: 10px;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 500;
+	color:#DB0A0A;
+}
