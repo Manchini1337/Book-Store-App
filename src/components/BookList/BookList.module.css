@@ -3,8 +3,6 @@
     margin: 4.8rem auto;
 }
 
-
-
 .bookGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -40,4 +38,9 @@
 .btn:hover {
     transition: all 0.3s ease-in;
     background-color: #0d6efd;
+}
+
+.loading {
+    font-size: 3.2rem;
+    text-align: center;
 }
