@@ -8,4 +8,4 @@ All the front end requirements (react, app-wide state management, pages, order f
 
 You can test the website [here.](https://bookstore-task-front.herokuapp.com/)
 
-
+* Please take into account that heroku app might take a moment to load.
